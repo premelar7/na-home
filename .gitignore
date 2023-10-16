@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules
+
+# Nuxt.js build output
+.nuxt
+dist
+
+# IDE directories and files
+.idea
+*.iml
+*.suo
+*.swp
+*.swm
+*.swn
+*.swo
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Yarn integrity file
+.yarn-integrity
+
+# VS Code directories
+.vscode
+
+# npm debug log
+npm-debug.log
+
+# yarn error log
+yarn-error.log
+
+# Custom assets
+static/img
