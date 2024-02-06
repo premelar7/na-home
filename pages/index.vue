@@ -7,7 +7,7 @@
 
                     <v-row>
                         <v-col cols="12">
-                            <h2 class="primary">Payment</h2>
+                            <h2 class="primary">Payments</h2>
                         </v-col>
                     </v-row>
 

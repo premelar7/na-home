@@ -1,5 +1,4 @@
 import { ThemeDefinition } from "vuetify";
-import { twColors } from "../utils/tw-colors";
 
 // String that represents the name of the theme I am using
 export const LIGHT_THEME = "light";
@@ -9,12 +8,12 @@ export const light: ThemeDefinition = {
   colors: {
     background: "#f7f439",
     surface: "#FFFFFF",
-    primary: twColors.blue[700],
-    secondary: twColors.blue[500],
-    error: twColors.red[500],
-    info: twColors.blue[400],
-    success: twColors.emerald[500],
-    warning: twColors.amber[500],
+    primary: "#FFFFFF",
+    secondary: "#FFFFFF",
+    error: "#FFFFFF",
+    info: "#FFFFFF",
+    success: "#FFFFFF",
+    warning: "#FFFFFF",
   },
 };
 
@@ -26,11 +25,11 @@ export const dark: ThemeDefinition = {
   colors: {
     background: "#f7f439",
     surface: "#FFFFFF",
-    primary: twColors.blue[700],
-    secondary: twColors.blue[500],
-    error: twColors.red[500],
-    info: twColors.blue[400],
-    success: twColors.emerald[500],
-    warning: twColors.amber[500],
+    primary: "#FFFFFF",
+    secondary: "#FFFFFF",
+    error: "#FFFFFF",
+    info: "#FFFFFF",
+    success: "#FFFFFF",
+    warning: "#FFFFFF",
   },
 };
