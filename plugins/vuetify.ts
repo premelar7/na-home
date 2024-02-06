@@ -1,7 +1,7 @@
 import { createVuetify } from "vuetify";
-import { light, dark } from "../utils/themes";
-import { defaults } from "../utils/defaults";
-import { aliases, custom } from "../utils/customIcons";
+import { light, dark } from "../utils/themes"
+import { defaults } from "../utils/defaults"
+import { aliases, custom } from "../utils/customIcons"
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
@@ -11,7 +11,7 @@ export default defineNuxtPlugin((app) => {
     theme: {
       themes: {
         light,
-        dark,
+        dark
       },
       // add color variations
       //   variations: {
