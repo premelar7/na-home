@@ -1,83 +1,42 @@
 <template>
     <v-container>
-        <v-row style="padding:30px 8px 8px 8px;">
-            <v-col
-                style="border-radius: 25px; box-shadow: 0 3px 5px 0 rgba(150, 150, 150, 0.2), 0 6px 20px 0 rgba(124, 124, 124, 0.19); ">
-                <div style="padding: 30px 7% 40px 7%">
-
+        <v-row class="row-main">
+            <v-col offset="7" class="cal-main">
+                <div class="div-main">
                     <v-row>
                         <v-col cols="12">
-                            <h2 class="primary">Payments</h2>
+                            <h3 class="primary">หน้าแรก</h3>
                         </v-col>
-                    </v-row>
-
-                    <v-row>
-                        <v-col cols="12" style="padding-bottom: 6px;">
-                            <p>รายการใช้จ่าย</p>
-                        </v-col>
-                        <v-col cols="12" class="row-content">
-                            <v-text-field label="รายการใช้จ่าย" outlined></v-text-field>
-                        </v-col>
-                    </v-row>
-
-                    <v-row style="margin-top: 0px;">
-                        <v-col cols="12" style="padding-bottom: 6px;">
-                            <p>ราคา (฿)</p>
-                        </v-col>
-                        <v-col cols="12" class="row-content">
-                            <v-text-field label="จำนวนเงิน" outlined></v-text-field>
-                        </v-col>
-                    </v-row>
-
-                    <v-row style="margin-top: 0px;">
-                        <v-col cols="12" style="padding-bottom: 6px;">
-                            <p>คนจ่าย</p>
-                        </v-col>
-                        <v-col cols="12" class="row-content">
-                            <v-select :items="pay_man" outlined placeholder="คนออกเงิน"></v-select>
-                        </v-col>
-                    </v-row>
-
-                    <v-row style="margin-top: 0px;">
-                        <v-col cols="12" style="padding-bottom: 6px;">
-                            <p>หารไหม</p>
-                        </v-col>
-                        <v-col cols="12" class="row-content">
-                            <v-select :items="shared_options" outlined placeholder="หารหรือไม่"></v-select>
-                        </v-col>
-                    </v-row>
-
-                    <v-row style="margin-top: 0px;">
-                        <v-col cols="12" style="padding-bottom: 6px;">
-                            <p>แนบรูปแนบสลิปใดๆ</p>
-                        </v-col>
-                        <v-col cols="12" class="row-content">
-                            <v-file-input hide-input>
-                            </v-file-input>
-                        </v-col>
-                    </v-row>
-
-                    <v-row style="padding-top:20px;">
-                        <v-col cols="2"></v-col>
-                        <v-col cols="12" sm="4">
-                            <v-btn x-large>ยกเลิกการสร้าง</v-btn>
-                        </v-col>
-                        <v-col cols="12" sm="4">
-                            <v-btn color="#000" x-large>สร้างรายการ</v-btn>
-                        </v-col>
-                        <v-col cols="2"></v-col>
                     </v-row>
                 </div>
             </v-col>
         </v-row>
     </v-container>
 </template>
-
+  
 <script>
 export default {
+    mounted() {
+        // this.positionCircle();
+    },
+    methods: {
+        // positionCircle() {
+        //     const circle = this.$el;
+        //     const maxX = window.innerWidth - 50; // Subtract circle width to keep within view
+        //     const maxY = window.innerHeight - 50; // Subtract circle height to keep within view
+
+        //     // Generate a random position within the viewport
+        //     const x = Math.floor(Math.random() * maxX);
+        //     const y = Math.floor(Math.random() * maxY);
+
+        //     // Apply the random position to the circle
+        //     circle.style.left = x + 'px';
+        //     circle.style.top = y + 'px';
+        // }
+    },
     data: () => ({
-        pay_man: ['คุณอรรถ', 'คุณน้อต'],
-        shared_options: ['หาร', 'ไม่หาร'],
+        pay_man: [],
+        shared_options: [1, 2],
         list_rules: [
             value => !!value
         ],

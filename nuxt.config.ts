@@ -1,7 +1,7 @@
 import vuetify from "vite-plugin-vuetify";
 
 // PWA Config
-const title = "NA home";
+const title = "SepCoin";
 const shortTitle = "Payment management";
 const description = "Payment management";
 const image = "";
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "NA home",
+      title: "Home",
       titleTemplate: "%s | Payment management",
       link: [
         { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
@@ -96,13 +96,13 @@ export default defineNuxtConfig({
     meta: {
       name: shortTitle,
       author: "Behon Baker",
-      theme_color: "#f7f439",
+      theme_color: "#FFF",
       description: description,
     },
     manifest: {
       name: shortTitle,
       short_name: shortTitle,
-      theme_color: "#f7f439",
+      theme_color: "#FFF",
       description: description,
     },
   },

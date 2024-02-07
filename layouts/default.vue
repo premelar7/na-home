@@ -2,6 +2,7 @@
 	<div>
 		<VApp>
 			<VMain>
+
 				<slot />
 			</VMain>
 		</VApp>

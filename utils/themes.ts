@@ -7,7 +7,7 @@ export const LIGHT_THEME = "light";
 export const light: ThemeDefinition = {
   dark: false,
   colors: {
-    background: "#f7f439",
+    background: "#FFFFFF",
     surface: "#FFFFFF",
     primary: "#000",
     secondary: twColors.blue[500],
@@ -24,7 +24,7 @@ export const DARK_THEME = "dark";
 export const dark: ThemeDefinition = {
   dark: true,
   colors: {
-    background: "#f7f439",
+    background: "#FFFFFF",
     surface: "#FFFFFF",
     primary: "#000",
     secondary: twColors.blue[500],
