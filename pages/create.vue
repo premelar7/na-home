@@ -59,7 +59,9 @@
           <v-row style="padding-top:20px;">
             <v-col cols="2"></v-col>
             <v-col cols="12" sm="4">
-              <v-btn x-large>ยกเลิกการสร้าง</v-btn>
+              <NuxtLink :to="`/`">
+                <v-btn x-large>ยกเลิกการสร้าง</v-btn>
+              </NuxtLink>
             </v-col>
             <v-col cols="12" sm="4">
               <v-btn color="#000" x-large>สร้างรายการ</v-btn>

@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row class="row-main">
-            <v-col>
+            <v-col cols="12">
                 <div class="div-main cal-main">
                     <v-row>
                         <v-col cols="12">
@@ -10,12 +10,23 @@
                     </v-row>
                 </div>
             </v-col>
-            <v-col>
+            <v-col cols="6" sm="3">
                 <NuxtLink :to="`/tesseract`">
                     <div class="div-main cal-main">
                         <v-row>
                             <v-col cols="12">
                                 <h3 class="primary">อ่าน slip</h3>
+                            </v-col>
+                        </v-row>
+                    </div>
+                </NuxtLink>
+            </v-col>
+            <v-col cols="6" sm="3">
+                <NuxtLink :to="`/create`">
+                    <div class="div-main cal-main">
+                        <v-row>
+                            <v-col cols="12">
+                                <h3 class="primary">สร้างรายการ</h3>
                             </v-col>
                         </v-row>
                     </div>
