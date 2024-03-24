@@ -15,7 +15,7 @@
                     <div class="div-main cal-main">
                         <v-row>
                             <v-col cols="12">
-                                <h3 class="primary">อ่าน</h3>
+                                <h3 class="primary">อ่าน slip</h3>
                             </v-col>
                         </v-row>
                     </div>
