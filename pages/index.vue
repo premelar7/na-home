@@ -1,8 +1,8 @@
 <template>
     <v-container>
         <v-row class="row-main">
-            <v-col offset="7" class="cal-main">
-                <div class="div-main">
+            <v-col>
+                <div class="div-main cal-main">
                     <v-row>
                         <v-col cols="12">
                             <h3 class="primary">หน้าแรก</h3>
@@ -10,10 +10,21 @@
                     </v-row>
                 </div>
             </v-col>
+            <v-col>
+                <NuxtLink :to="`/tesseract`">
+                    <div class="div-main cal-main">
+                        <v-row>
+                            <v-col cols="12">
+                                <h3 class="primary">อ่าน</h3>
+                            </v-col>
+                        </v-row>
+                    </div>
+                </NuxtLink>
+            </v-col>
         </v-row>
     </v-container>
 </template>
-  
+
 <script>
 export default {
     mounted() {
