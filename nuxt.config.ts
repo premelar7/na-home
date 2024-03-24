@@ -13,7 +13,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // enable takeover mode
   typescript: { shim: false },
-  build: { transpile: ["vuetify"] },
+  build: {
+    transpile: ["vuetify"],
+    rollupOptions: {
+      external: [
+        "sharp"
+      ]
+    }
+  },
   modules: [
     "@kevinmarrec/nuxt-pwa",
     async (options, nuxt) => {
